@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificador de Dibujos</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="icons8-draw-100.png" type="image/x-icon">
+</head>
+<body>
+    <div class="modal fade" id="myModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">x</button>
+                <h4 class="modal-title">¿Buscas inspiracion?</h4>
+            </div>
+           <div class="modal-body">
+            <img src="sketches.png">
+           </div> 
+        </div>
+    </div>
+    <h2>Identificador de Dibujos
+        <button class="btn btn-info pull-right" id="boton" data-toggle="modal" data-target="#myModal">Algunas ideas</button>
+    </h2>
+    <br>
+    <h3>Parece:<span id="parece"></span></h3>
+    <h3>Confianza:<span id="conf"></span></h3>
+    <button class="btn btn-primary" onclick="borrar()">Borrar lienzo</button>
+    <script src="main.js"></script>
+</body>
+</html>

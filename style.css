@@ -1,0 +1,17 @@
+body{
+    background-color: honeydew;
+    text-align: center;
+}
+
+h2{
+    background: #c7bebe91;
+    padding: 10px;
+}
+
+#boton{
+    margin-right: 30px;
+}
+
+canvas{
+    top: 250px !important;
+}
