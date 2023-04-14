@@ -1,5 +1,5 @@
 function setup() {
-    canvas = createCanvas(400, 370);
+    canvas = createCanvas(280, 280);
     canvas.center();
     background("#fff");
     canvas.mouseReleased(reconocer_dibujo);
@@ -12,7 +12,7 @@ function preload() {
 
 function draw() {
     stroke("black");
-    strokeWeight(10);
+    strokeWeight(13);
     if (mouseIsPressed == true) {
         line(pmouseX, pmouseY, mouseX, mouseY);
     }
